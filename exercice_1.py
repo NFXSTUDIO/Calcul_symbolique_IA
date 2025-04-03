@@ -1,4 +1,4 @@
-from sympy import symbols as sb
+from sympy import symbols as sb, trigsimp
 import sympy as sy
 
 x,y,z,t,c = sb('x,y,z,t,c')
@@ -96,3 +96,16 @@ print(frac.apart())
 
 frac2 = (4*x**3+21*x**2+10*x+12)/(x**4+5*x**3+5*x**2+4*x)
 print(frac2.apart())
+
+print(sy.cancel((x**2+2*x+1)/(x**2+x))) #canonical form (fraction irreductible)
+
+print("Forme canonique : ")
+print(sy.trigsimp(sy.sin(x)**4-2*sy.cos(x)**2*sy.sin(x)**2+sy.cos(x)**4))
+print(sy.trigsimp(sy.cosh(x)**2+sy.sinh(x)**2))
+print(sy.trigsimp(sy.sinh(x)/sy.tanh(x)))
+
+print(sy.expand_trig(sy.sin(x+y)))
+print(sy.expand_trig(sy.cos(x+y)))
+print(sy.expand_trig(sy.sin(x-y)))
+print(sy.expand_trig(sy.cos(x-y)))
+print(sy.expand_trig(sy.tan(2*x)))
