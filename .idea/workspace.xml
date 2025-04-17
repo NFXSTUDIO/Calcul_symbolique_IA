@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5244a6bd-15d2-4dc9-b44e-be5e42075893" name="Changes" comment="add ex1">
-      <change afterPath="$PROJECT_DIR$/exercice2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercice3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercice_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercice_1.py" afterDir="false" />
+    <list default="true" id="5244a6bd-15d2-4dc9-b44e-be5e42075893" name="Changes" comment="add ex3">
+      <change afterPath="$PROJECT_DIR$/exo4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NFXSTUDIO/Calcul_symbolique_IA",
+    "accountId": "2cbd9472-19ec-438a-8c4a-a6caa5f58057"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -69,7 +72,7 @@
       <workItem from="1743665353886" duration="12424000" />
       <workItem from="1744266708275" duration="13335000" />
       <workItem from="1744803567728" duration="32000" />
-      <workItem from="1744874731522" duration="8595000" />
+      <workItem from="1744874731522" duration="8984000" />
     </task>
     <task id="LOCAL-00001" summary="begin">
       <option name="closed" value="true" />
@@ -111,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743675344037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add ex3">
+      <option name="closed" value="true" />
+      <created>1744883732347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744883732347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,12 +131,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="begin" />
     <MESSAGE value="add ex1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ex1" />
+    <MESSAGE value="add ex3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ex3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MO2h$exercice2.coverage" NAME="exercice2 Coverage Results" MODIFIED="1744277635648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$main.coverage" NAME="main Coverage Results" MODIFIED="1743666135361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$exercice_1.coverage" NAME="exercice_1 Coverage Results" MODIFIED="1743675980192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MO2h$exercice3.coverage" NAME="exercice3 Coverage Results" MODIFIED="1744883386249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MO2h$exercice3.coverage" NAME="exercice3 Coverage Results" MODIFIED="1744883591737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
