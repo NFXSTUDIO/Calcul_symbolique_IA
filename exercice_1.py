@@ -1,5 +1,6 @@
 from sympy import symbols as sb, trigsimp
 import sympy as sy
+from sympy.physics.units import force
 
 x,y,z,t,c = sb('x,y,z,t,c')
 a,b = sb('a,b')
@@ -109,3 +110,11 @@ print(sy.expand_trig(sy.cos(x+y)))
 print(sy.expand_trig(sy.sin(x-y)))
 print(sy.expand_trig(sy.cos(x-y)))
 print(sy.expand_trig(sy.tan(2*x)))
+
+print("Forme polynomial : ")
+print(sy.collect(x*y+x-3+2*x**2-z*x**2+x**3, x))
+
+print(sy.powsimp((x**a)*(y**a), force=True))
+print(sy.powsimp((x**a)*(y**b),force=True ))
+print(sy.expand_power_exp(x**(a+b),deep=True))
+print(sy.powdenest((x**a)**b,force=True))
