@@ -1,0 +1,6 @@
+numpy
+sympy
+pysr
+matplotlib
+scikit-learn
+sympy.physics
