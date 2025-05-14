@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5244a6bd-15d2-4dc9-b44e-be5e42075893" name="Changes" comment="add genetic_algo.py">
+    <list default="true" id="5244a6bd-15d2-4dc9-b44e-be5e42075893" name="Changes" comment="modify code_robot.py">
+      <change afterPath="$PROJECT_DIR$/code_3dof.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_robot.py" afterDir="false" />
     </list>
@@ -45,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.code_3dof.executor&quot;: &quot;Run&quot;,
     &quot;Python.code_gen.executor&quot;: &quot;Run&quot;,
     &quot;Python.code_gen2.executor&quot;: &quot;Run&quot;,
     &quot;Python.code_robot.executor&quot;: &quot;Run&quot;,
@@ -101,6 +103,10 @@
       <workItem from="1746465224858" duration="5000" />
       <workItem from="1746964080479" duration="7000" />
       <workItem from="1747033170709" duration="9933000" />
+      <workItem from="1747044297171" duration="476000" />
+      <workItem from="1747109017301" duration="11000" />
+      <workItem from="1747238131319" duration="4259000" />
+      <workItem from="1747243243770" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="begin">
       <option name="closed" value="true" />
@@ -198,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746181021002</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="modify code_robot.py">
+      <option name="closed" value="true" />
+      <created>1747044368213</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747044368213</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,15 +227,17 @@
     <MESSAGE value="add code_gen.py" />
     <MESSAGE value="add code_gen2.py" />
     <MESSAGE value="add genetic_algo.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add genetic_algo.py" />
+    <MESSAGE value="modify code_robot.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify code_robot.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MO2h$exercice2.coverage" NAME="exercice2 Coverage Results" MODIFIED="1744277635648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$code_gen.coverage" NAME="code_gen Coverage Results" MODIFIED="1746174004805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$genetic_algo.coverage" NAME="genetic_algo Coverage Results" MODIFIED="1746180850176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$exercice_1.coverage" NAME="exercice_1 Coverage Results" MODIFIED="1743675980192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MO2h$code_3dof.coverage" NAME="code_3dof Coverage Results" MODIFIED="1747241901632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$main.coverage" NAME="main Coverage Results" MODIFIED="1743666135361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MO2h$code_robot.coverage" NAME="code_robot Coverage Results" MODIFIED="1747042815580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MO2h$code_robot.coverage" NAME="code_robot Coverage Results" MODIFIED="1747243724845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$code_gen2.coverage" NAME="code_gen2 Coverage Results" MODIFIED="1746180009658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$exo4.coverage" NAME="exo4 Coverage Results" MODIFIED="1746167908807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MO2h$exercice3.coverage" NAME="exercice3 Coverage Results" MODIFIED="1744883591737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

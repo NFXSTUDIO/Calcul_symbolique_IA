@@ -5,15 +5,14 @@ import numpy as np
 
 theta1,theta2,theta3,d2,d3 = symbols('theta1 theta2 theta3 d2 d3')
 x,y,z,alpha,beta,gamma =symbols('x y z alpha,beta,gamma')
-#theta1,theta2,theta3 = -0.58,0.4,-1.5
-#L1,L2,L3,L4 = 0.43,0.3,0.2,0.025
-#d0,d1,d4 = 0.05,0.48,0.15
-d0,d1,d4 = symbols('d0 d1 d4')
+#theta1,theta2,theta3 = (-0.58,0.4,-1.5)
+#L1,L2,L3,L4 = symbols('L1 L2 L3 L4')
+L1,L2,L3,L4 = 0.43,0.3,0.2,0.025
 
 print("Forward Kinematic : ")
 Tw0 = Matrix([[cos(0),-sin(0),0,0],
-        [sin(0)*cos(0),cos(0)*cos(0),-sin(0),-sin(0)*d0],
-        [sin(0)*sin(0),cos(0)*sin(0),cos(0),cos(0)*d0],
+        [sin(0)*cos(0),cos(0)*cos(0),-sin(0),-sin(0)*L1],
+        [sin(0)*sin(0),cos(0)*sin(0),cos(0),cos(0)*L1],
         [0,0,0,1]])
 
 
@@ -22,19 +21,19 @@ T01 = Matrix([[cos(theta1),-sin(theta1),0,0],
         [sin(theta1)*sin(0),cos(theta1)*sin(0),cos(0),0],
         [0,0,0,1]])
 
-T12 = Matrix([[cos(-pi/2),-sin(-pi/2),0,0],
-        [sin(-pi/2)*cos(0),cos(-pi/2)*cos(0),-sin(0),-sin(0)*(d1+d2)],
-        [sin(-pi/2)*sin(0),cos(-pi/2)*sin(0),cos(0),cos(0)*(d1+d2)],
+T12 = Matrix([[cos(theta2),-sin(theta2),0,0],
+        [sin(theta2)*cos(pi/2),cos(theta2)*cos(pi/2),-sin(pi/2),0],
+        [sin(theta2)*sin(pi/2),cos(theta2)*sin(pi/2),cos(pi/2),0],
         [0,0,0,1]])
 
-T2e = Matrix([[cos(0),-sin(0),0,0],
-        [sin(0)*cos(-pi/2),cos(0)*cos(-pi/2),-sin(-pi/2),-sin(-pi/2)*(d3+d4)],
-        [sin(0)*sin(-pi/2),cos(0)*sin(-pi/2),cos(-pi/2),cos(-pi/2)*(d3+d4)],
+T23 = Matrix([[cos(theta3),-sin(theta3),0,L2],
+        [sin(theta3)*cos(0),cos(theta3)*cos(0),-sin(0),0],
+        [sin(theta3)*sin(0),cos(theta3)*sin(0),cos(0),0],
         [0,0,0,1]])
 
-#T34 = Matrix([[cos(0),-sin(0),0,L3+L4],[sin(0)*cos(0),cos(0)*cos(0),-sin(0),0],[sin(0)*sin(0),cos(0)*sin(0),cos(0),0],[0,0,0,1]])
+T34 = Matrix([[cos(0),-sin(0),0,L3+L4],[sin(0)*cos(0),cos(0)*cos(0),-sin(0),0],[sin(0)*sin(0),cos(0)*sin(0),cos(0),0],[0,0,0,1]])
 
-TWe_q = Tw0 * T01 * T12 * T2e
+TWe_q = Tw0 * T01 * T12 * T23 * T34
 print(pretty(simplify(TWe_q)))
 
 Rx = Matrix([[1,0,0],
@@ -68,13 +67,13 @@ X = Matrix([a,b,c,pi/2,theta1,theta2+theta3])
 print(pretty(simplify(X)))
 
 print("Inverse Kinematic : ")
-print(pretty(simplify(x*cos(atan(y/x))+y*sin(atan(y/x)))))
-
-#x,y,z = 0,-0.2,0.55
-
+x,y,z = (0.12,-0.5,0.53)
 eq1 = atan2(y,x)
-eq2 = z - d0 -d1
-eq3 = sqrt(x**2+y**2) - d4
+eq3 = acos((x**2+y**2+(z-L1)**2-L2**2-L3**2-L4**2-2*L3*L4)/(2*L2*L3 + 2*L2*L4))
+num = (L1 - z)*(L2 + L3*cos(eq3) + L4*cos(eq3)) + (L3+L4)*(x*cos(eq1) + y*sin(eq1))*sin(eq3)
+den = (L1 -z)*(L3 + L4)*sin(eq3) - (x*cos(eq1) + y*sin(eq1))*(L2 + L3*cos(eq3) + L4*cos(eq3))
+eq2 = atan2(num,den)
+
 print(pretty(eq1))
 print(pretty(eq2))
 print(pretty(eq3))
